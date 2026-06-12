@@ -122,7 +122,7 @@ http://localhost:3000).
 
 ### 4. First Time Setup (Database Seeding)
 To test the app, you need inventory in your database!
-- 1. Go to application and register an Admin account.
-- 2. Once logged in, click the **Load Initail Inventory Data** button on the Admin Dashboard to populate the database with dummy ingredients.
-- 3. You are now ready to place the orders! 
+- Go to application and register an Admin account.
+- Once logged in, click the **Load Initail Inventory Data** button on the Admin Dashboard to populate the database with dummy ingredients.
+- You are now ready to place the orders! 
 

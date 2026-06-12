@@ -64,3 +64,65 @@ Follow these steps to run the application on your local machine.
 ```bash
 git clone [https://github.com/yourusername/pizza-delivery-app.git](https://github.com/yourusername/pizza-delivery-app.git)
 cd pizza-delivery-app
+```
+
+### 2. Backend Setup
+Navigate to the backend directory, install dependencies, and set up your environment variables
+
+```bash
+cd backend
+npm install
+```
+
+Create a .env file in the backend folder and add the following
+
+### env
+```bash
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_super_secret_jwt_key
+EMAIL_USER=your_gmail_address@gmail.com
+EMAIL_PASS=your_16_character_google_app_password
+RAZORPAY_KEY_ID=your_razorpay_test_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_test_key_secret
+```
+
+Start the backend server:
+```bash
+node server.js
+```
+
+### (The server should log "MongoDB Connected" and run on port 5000).
+
+### 3. Frontend Setup
+Open a new terminal window, navigate to the frontend directory, and install dependencies.
+
+```bash
+cd frontend
+npm install
+```
+
+Create a .env file in the frontend folder and add your Razorpay public key (must start with REACT_APP_):
+
+```bash
+env
+REACT_APP_RAZORPAY_KEY_ID = your_razorpay_test_key_id
+```
+
+Start the React application:
+
+```bash
+npm start
+```
+
+(The application will open automatically in your browser at
+```bash
+http://localhost:3000).
+```
+
+### 4. First Time Setup (Database Seeding)
+To test the app, you need inventory in your database!
+- 1. Go to application and register an Admin account.
+- 2. Once logged in, click the **Load Initail Inventory Data** button on the Admin Dashboard to populate the database with dummy ingredients.
+- 3. You are now ready to place the orders! 
+
